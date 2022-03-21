@@ -40,7 +40,7 @@
             </table>
             <table align="center" border="0" width="90%" cellpadding="6" cellspacing="0" bgcolor="white">
                <tr>
-                  <td colspan="3">
+                  <td colspan="4">
                      <font face="century gothic" size="3"><b>Índice:</b></font>
                   </td>
                </tr>
@@ -63,6 +63,13 @@
                      <ul>
                         <li>
                            <a href="#artistasfav"><font face="century gothic" size="3"><b>Mis Artistas Favoritos</b></font></a>
+                        </li>
+                     </ul>
+                  </td>
+                  <td>
+                     <ul>
+                        <li>
+                           <a href="#contacto"><font face="century gothic" size="3"><b>Contacto/Comentarios</b></font></a>
                         </li>
                      </ul>
                   </td>
@@ -135,6 +142,71 @@
                   </td>
                </tr>
             </table>
+            <form>
+               <table align="center" border="0" width="90%" cellpadding="6" cellspacing="0" bgcolor="white">
+                  <tr>
+                     <td colspan="2">
+                        <h2><a name="contacto"></a><font face="century gothic" color="green"><u>Contacto/Comentarios:</u></font></h2>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                       <label for="nombre">Nombre:</label>
+                     </td>
+                     <td>
+                        <input type="text" name="nombre" id="nombre" required>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <label for="edad">Edad:</label>
+                     </td>
+                     <td>
+                        <input type="number" name="edad" id="edad" min="1" max="120" step="1" required>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <label for="sexo">Sexo:</label>
+                     </td>
+                     <td>
+                        <input type="radio" name="sexo" id="masculino" required>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="sexo" id="femenino" required>
+                        <label for="femenino">Femenino</label>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td width="12%">
+                        <label for="email">Correo electrónico:</label>
+                     </td>
+                     <td>
+                        <input type="email" name="correo" id="email" required>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <label for="teléfono">Teléfono:</label>
+                     </td>
+                     <td>
+                        <input type="tel" name="teléfono" id="teléfono">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td valign="top">
+                        <label for="comentario">Comentario:</label>
+                     </td>
+                     <td>
+                        <textarea name="comentario" id="comentario" cols="40" rows="5" required></textarea>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td colspan="2">
+                        <button type="submit">Enviar</button>
+                     </td>
+                  </tr>
+               </table>
+            </form>
          </td>
       </tr>
       <tr>
